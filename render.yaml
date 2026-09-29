@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: course-notes-kb
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /api/settings
+    autoDeploy: true
