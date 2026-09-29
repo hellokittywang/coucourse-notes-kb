@@ -1,8 +1,8 @@
 {
   "version": 1,
   "settings": {
-    "adminPass": "admin",
-    "adminName": "王倩",
+    "adminPass": "changeme",
+    "adminName": "管理员",
     "guestPass": ""
   },
   "ui": {
