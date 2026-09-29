@@ -16,7 +16,7 @@ const TMP_SESSIONS = path.join(TMP_DIR, 'kb-sessions.json');
 function defaultData() {
   return {
     version: 1,
-    settings: { adminPass: 'admin', adminName: '王倩', guestPass: '' },
+    settings: { adminPass: process.env.ADMIN_PASS || 'changeme', adminName: process.env.ADMIN_NAME || '管理员', guestPass: '' },
     ui: { lastSectionId: null },
     courses: [],
     annotations: []
